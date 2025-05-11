@@ -3,20 +3,22 @@ package Package;
 public class StringPalindrome {
 
 	public static void main(String[] args) {
-		
-		String str = "racecar";
+
+		String A = "racecar";
 		String rev = "";
 		
-		for (int i=str.length()-1; i>=0; i--) {
-			rev += str.charAt(i);
-			
+		System.out.println("Actual: " +A);
+		
+		for (int i = 0; i < A.length(); i++) {
+			rev =  A.charAt(i) + rev  ;
 		}
-        if (str.equals(rev)) {
-        	System.out.println("Its a Palindrome :"+rev);
-        }
-        else {
-        	System.out.println("Its not a Palindrome :"+rev);
-        }
+		
+		System.out.println("Reversed: " + rev);
+		
+		if (A.equals(rev)) {
+			System.out.println("Its a Palindrome");
+		} else {
+			System.out.println("Not a Palindrome");
+		}
 	}
-
 }
