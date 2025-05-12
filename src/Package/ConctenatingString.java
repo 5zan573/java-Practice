@@ -7,10 +7,10 @@ public class ConctenatingString {
 		String[] words = { "Java", "is", "a", "powerful", "language" };
 		String sentence = "";
 
-		for (int i = 0; i < words.length; i++) {
-			sentence += words[i] + " ";
+		for (String str : words ) {
+			sentence += str + " ";
 		}
-		System.out.println(sentence);
+		System.out.println(sentence.trim());
 	}
 
 }
