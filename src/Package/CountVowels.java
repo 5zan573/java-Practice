@@ -3,24 +3,21 @@ package Package;
 public class CountVowels {
 
 	public static void main(String[] args) {
-		
-		String a = "Sea Carpentar";
-		int vowels = 0;
 
-		for (int i=0; i<a.length(); i++) {
-			
-			char b = a.charAt(i);
-			
-			if (b=='a'||b=='e'||b=='i'||b=='o'||b=='u'||
-				b=='A'||b=='E'||b=='I'||b=='O'||b=='U') {
-				
-				vowels++;
+		String s = "WatEr";
+
+		int count = 0;
+
+		String lc = s.toLowerCase();
+
+		for (int i = 0; i < lc.length(); i++) {
+
+			char s1 = lc.charAt(i);
+			if (s1 == 'a' || s1 == 'e' || s1 == 'i' || s1 == 'o' || s1 == 'u') {
+
+				count++;
 			}
-				
-			
 		}
-		System.out.println(vowels);
-
+		System.out.println(count);
 	}
-
 }
